@@ -1,0 +1,92 @@
+.home{
+
+    background-color: var(--container-color);
+    padding-block: 9rem 3rem;
+    
+}
+
+.home__container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    padding-left:100px;
+    height: 400px;
+    
+    
+    
+}
+
+.home__small{
+
+    font-size: var(--larger-font-size);
+    font-weight: var(--weight-600);
+    letter-spacing: 1px ;
+}
+
+.home__title{
+    font-size: var(--big-font-size);
+    line-height: 1.4;
+    
+}
+
+.home__title span{
+    font-weight: var(--weight-300);
+}
+
+.home__description{
+    margin-block: 1.5rem 3rem;
+}
+
+.btns{
+ display: inline-block;
+ background-color: var(--first-color);
+ border:1px solid var(--first-color);
+ color:black;
+padding: 0.9rem 2.5rem;
+font-size: 0.9rem;
+border-radius:0.5rem;
+transition: all .5s ease;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: var(--weight-600);
+}
+
+.btns:hover{
+    background-color: var(--first-color-dark);
+}
+
+.home__img-wrapper{
+
+    perspective: 800px; 
+    animation: flipColorChange 4s ease-in-out infinite;
+    padding-right: 100px;
+}
+
+
+.home__img{
+
+    width:auto;
+    height:900px;
+    border-radius: 10px;
+    transform: scale(0.9);
+  opacity: 0.9;
+  transition: filter 0.8s ease-in-out, transform 0.8s ease-in-out;
+  }
+
+    
+ 
+  
+  @keyframes glowEffect {
+    0%, 100% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    }
+}
+
+
+
